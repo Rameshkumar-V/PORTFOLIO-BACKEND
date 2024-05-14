@@ -5,7 +5,7 @@ const mc=mondodb.MongoClient;
 
 const security=require('./Auth');
 
-
+require('dotenv').config();
 
 
 var database;
