@@ -13,7 +13,7 @@ var database;
 
 async function getdb(){
 
-  const client=await mc.connect('mongodb://localhost:27017');
+  const client=await mc.connect(DATA_BASE_URI);
 
   database= await client.db('db_portfolio')
 
