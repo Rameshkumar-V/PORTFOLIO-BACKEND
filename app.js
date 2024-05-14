@@ -13,7 +13,7 @@ var database;
 
 async function getdb(){
 
-  const client=await mc.connect('mongodb+srv://vrameshkumar260:OqLCL381TxszqRAb@cluster0.wg1tqz2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+  const client=await mc.connect(process.env.DATA_BASE_URI);
 
   database= await client.db('db_portfolio')
 
